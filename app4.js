@@ -21,7 +21,7 @@ function fun2(val) {
     word = word + val;
     counter++; 
     let output = `<div> Hello ${counter}</div>`;
-    output += `<div> Hello ${word}</div>`; 
+    output += `<div>${word}</div>`; 
     document.write(output);
 }
 
