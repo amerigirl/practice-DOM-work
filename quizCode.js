@@ -20,7 +20,7 @@ if (content.innerHTML === " ") {
 
 // Question 4: Remove an element from the DOM
 
-var box = document.getElementById("box");
+// var box = document.getElementById("box");
 
 if (box) {
   box.parentNode.removeChild(box);
@@ -40,10 +40,30 @@ if (content) {
 
 // Question 6: Add a role attribute with the value "button" to a div with the id "myDiv"
 
+var myDiv = document.getElementById('myDiv');
+
+myDiv.setAttribute('role', 'button'); //attribute = role, value = button
+console.log(myDiv);
+
+
 // Question 7: Append a new child element to an existing element
+var box = document.getElementById('box');
+var newElement = document.createElement('span')
+newElement.textContent = 'New Child Element';
+box.appendChild(newElement);
+console.log(box)
 
 // Question 8: Remove all paragraph elements from the document
+document.querySelectorAll('p').forEach(p => p.remove());
+console.log('All paragraph elements removed');
 
 // Question 9: Change the text content of an element
 
+content.innerHTML = 'Hola';
+console.log(content);
+
 // Question 10: Create a new div element
+var newDiv = document.createElement('div');
+newDiv.textContent = 'New Div Element';
+document.body.appendChild(newDiv);
+console.log(newDiv);
