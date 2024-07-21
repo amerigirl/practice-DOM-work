@@ -1,30 +1,62 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dom Manipulation Practice</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice Page</title>
     <style>
-      .new-class {
-        color: green;
-      }
+        #content {
+            width: 150px;
+            height: 150px;
+            background-color: lightgrey;
+            margin-bottom: 10px;
+        }
+        #colorBox {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            margin-bottom: 10px;
+        }
+        #hoverBox {
+            width: 150px;
+            height: 150px;
+            background-color: yellow;
+            margin-bottom: 10px;
+        }
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+        #newElement {
+            border: 1px solid black;
+            padding: 10px;
+            margin-top: 10px;
+        }
     </style>
-  </head>
+</head>
+<body>
+    <h1 id="header">Header</h1>
 
-  <body>
-    <div id="header">Header Element</div>
-    <div id="myDiv"></div>
-    <div id="content">sdfs</div>
-    <div id="box">Hola</div>
-    <div id="removed">HIYA</div>
+    <div id="content">Content Area</div>
+    <button id="button">Change Color</button>
+    <div id="colorBox"></div>
 
-     <button id="changeColorBtn">Change Color</button>
-    <div id="colorBox">Color Box</div>
+    <div id="hoverBox">Hover over me</div>
 
-    <p>Paragraph 1</p>
-    <p>Paragraph 2</p>
-    <p>Paragraph 3</p> <button id="changeColorBtn">Change Color</button>
-    <div id="colorBox">Color Box</div>
-  </body>
-<script src="quizCode.js"></script>
+    <input type="text" id="input" placeholder="Type here">
+    <p id="output">Output will be displayed here</p>
+
+    <div id="myDiv">This is my div</div>
+
+    <p>Other paragraph 1</p>
+    <p>Other paragraph 2</p>
+    <p>Other paragraph 3</p>
+
+    <div id="newElement">This is a new element</div>
+
+
+            <script src="quizCode.js"></script>
+
+   
+</body>
 </html>
