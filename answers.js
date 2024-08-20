@@ -56,3 +56,5 @@ const header = document.getElementById("header");
 // input.addEventListener('keydown', () => {
 //     output.textContent = input.value;
 // });
+
+//Question 14: move the h3 content in the content box to the center of the box using css properties
